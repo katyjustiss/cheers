@@ -1,31 +1,33 @@
 #!/usr/bin/env node
 
-if(process.argv.length > 2){ //test is passing name as 3rd argv
-  for(var i = 2; i<process.argv.length; i++){ //just grabbing the third argv.
-    var letters = process.argv[i].split('');
-    letters.forEach(function(letter, i){
-      switch(letter.toUpperCase()){
-        case 'A':
-        case 'E':
-        case 'F':
-        case 'H':
-        case 'I':
-        case 'L':
-        case 'M':
-        case 'N':
-        case 'O':
-        case 'R':
-        case 'S':
-        case 'X':
-          var word = 'an ';
-          break;
-        default:
-          var word = 'a ';
-      }
-      console.log('Give me ' + word + letter.toUpperCase() +'!');
-    })
+//module.exports
+
+  if(process.argv.length > 2){ //test is passing name as 3rd argv
+    for(var i = 2; i<process.argv.length; i++){ //just grabbing the third argv.
+      var letters = process.argv[i].split('');
+        letters.forEach(function(letter){
+          switch(letter.toUpperCase()){
+            case 'A':
+            case 'E':
+            case 'F':
+            case 'H':
+            case 'I':
+            case 'L':
+            case 'M':
+            case 'N':
+            case 'O':
+            case 'R':
+            case 'S':
+            case 'X':
+              var word = 'an ';
+              break;
+            default:
+              var word = 'a ';
+          }
+        console.log('Give me ' + word + letter.toUpperCase() +'!');
+      })
+    }
   }
-}
 
 
 //Using prompt module

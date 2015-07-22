@@ -4,7 +4,7 @@ var Cheers = require(process.cwd() + "/app.js");
 
 
 //Tests for the cheers function
-describe('Cheers', function() {
+describe('CLI', function() {
   it('should create a cheer from name', function(done) {
     cp.execFile('./app.js', ['Katy'], function(err, stdout) {
       stdout.should.equal("Give me a K!\nGive me an A!\nGive me a T!\nGive me a Y!\n");
@@ -18,3 +18,8 @@ describe('Cheers', function() {
     })
   })
 });
+
+// describe('Cheers', function() {
+//   it('should create a cheer from name', function() {
+
+// });
