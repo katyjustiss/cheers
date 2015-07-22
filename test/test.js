@@ -1,5 +1,7 @@
 var should = require("chai").should();
 var cp = require('child_process');
+var Cheers = require(process.cwd() + "/app.js");
+
 
 //Tests for the cheers function
 describe('Cheers', function() {
