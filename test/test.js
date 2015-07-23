@@ -2,6 +2,13 @@ var should = require("chai").should();
 var cp = require('child_process');
 var Cheers = require(process.cwd() + "/app.js");
 
+//making sure jS is working correctly
+describe('Cheers', function () {
+  it('truthyness', function () {
+    true.should.be.true;
+    false.should.be.false;
+  });
+});
 
 //Tests for the cheers function
 describe('CLI', function() {
